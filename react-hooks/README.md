@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## All about React Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### A simple, cleaner way to write the React component we know and love.
 
-## Available Scripts
+* Hooks represent the future of the react.
 
-In the project directory, you can run:
+* In the longer term, hooks are the primary way to write Rect component.
 
-### `npm start`
+* Hook is a regular JS function that "hooks" into existing React features.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Hooks allows us to use features from class based components(Such as state, context and other lifecycle methods).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Advantages of hooks.
+1. Reduction in boilerplate code/ code size
+2. Less Complexity
+3. Easier separation of business logic from components
+4. More reusability
 
-### `npm test`
+Few important points that devs forget when they are working with hooks.
+* Hooks cannot be used inside a condition
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## useState hook
+* This is used to build a component which is dependent on state. In class component you get state as a parameter, but in functional component you get state only when you use useState hook.
 
-### `npm run build`
+## useEffect hook
+* This hook is used to provide lifecycle methods available in class component, it provides below lifecycle methods
+    * ComponentDidMount
+    * ComponentDidUpdate
+    * ComponentWillUnmount 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## useContext hook
+* This hook acts like a bridge and helps in gaining the access to props without prop drilling.
+* The component proividing data is called Provider
+* The componet consuming data is called Consumer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Custom hooks
+* Custom hooks has to start with a keyword <i>"use"</i>. For Example useIsProduction, useKeyPress
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<i><b> I have used create-react-app to get the boilerplate code.<b></i>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<i><b>There are new syntax and methods to learn, that is what we are going to do in this repo.</b></i>
